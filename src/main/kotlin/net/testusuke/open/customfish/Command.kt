@@ -41,7 +41,14 @@ object Command:CommandExecutor {
 
                         }
                     }
-                }
+                }else sendHelp(sender)
+            }
+            //  fish getter
+            "get" -> {
+                if(args.size == 2){
+                    val name = args[1]
+                    
+                }else sendHelp(sender)
             }
 
             else -> sendHelp(sender)
